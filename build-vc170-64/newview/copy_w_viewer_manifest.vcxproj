@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{22E1424A-86A4-300D-87B5-327CC5BC5C24}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>copy_w_viewer_manifest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\build-vc170-64\newview;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\build-vc170-64\newview;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\autobuild.xml">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating packages-info.txt for the about box</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\python3.10.exe" D:/work/slfirestorm/indra/cmake/run_build_test.py -DAUTOBUILD_ADDRSIZE=64 -DAUTOBUILD=C:\Users\tursilion\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts\autobuild "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0/python3.10.exe" D:/work/slfirestorm/indra/../scripts/packages-formatter.py Firestorm-slpw 7.1.12.77385 D:/work/slfirestorm/build-vc170-64/packages &gt; packages-info.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\scripts\packages-formatter.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\newview\packages-info.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating packages-info.txt for the about box</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\python3.10.exe" D:/work/slfirestorm/indra/cmake/run_build_test.py -DAUTOBUILD_ADDRSIZE=64 -DAUTOBUILD=C:\Users\tursilion\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts\autobuild "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0/python3.10.exe" D:/work/slfirestorm/indra/../scripts/packages-formatter.py Firestorm-slpw 7.1.12.77385 D:/work/slfirestorm/build-vc170-64/packages &gt; packages-info.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\scripts\packages-formatter.py;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\newview\packages-info.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\04b296d16f0baec6a9b2a19d78a0d991\copy_touched.bat.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing viewer_manifest copy</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\python3.10.exe" D:/work/slfirestorm/indra/newview/viewer_manifest.py --actions=copy --arch=x86_64 --artwork= --bugsplat= --fmodstudio=ON --openal=OFF --tracy=OFF --avx2=OFF --build=D:/work/slfirestorm/build-vc170-64/newview --buildtype=RelWithDebInfo --channel=Firestorm-slpw --configuration=$(Configuration) --dest=D:/work/slfirestorm/build-vc170-64/newview/RelWithDebInfo --grid=agni --source=D:/work/slfirestorm/indra/newview --touch=D:/work/slfirestorm/build-vc170-64/newview/RelWithDebInfo/copy_touched.bat --versionfile=D:/work/slfirestorm/build-vc170-64/newview/viewer_version.txt --viewer_flavor=oss
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\indra\newview\viewer_manifest.py;D:\work\slfirestorm\build-vc170-64\llwebrtc\RelWithDebInfo\llwebrtc.dll;D:\work\slfirestorm\etc\message.xml;D:\work\slfirestorm\scripts\messages\message_template.msg;D:\work\slfirestorm\build-vc170-64\sharedlibs\RelWithDebInfo\llwebrtc.dll;D:\work\slfirestorm\build-vc170-64\packages\ca-bundle.crt;D:\work\slfirestorm\indra\newview\licenses-win32.txt;D:\work\slfirestorm\indra\newview\featuretable.txt;D:\work\slfirestorm\indra\newview\app_settings\anim.ini;D:\work\slfirestorm\indra\newview\app_settings\autoreplace.xml;D:\work\slfirestorm\indra\newview\app_settings\client_list_v2.xml;D:\work\slfirestorm\indra\newview\app_settings\cloud.xml;D:\work\slfirestorm\indra\newview\app_settings\cmd_line.xml;D:\work\slfirestorm\indra\newview\app_settings\commands.xml;D:\work\slfirestorm\indra\newview\app_settings\emoji_groups.xml;D:\work\slfirestorm\indra\newview\app_settings\foldertypes.xml;D:\work\slfirestorm\indra\newview\app_settings\graphic_preset_controls.xml;D:\work\slfirestorm\indra\newview\app_settings\grass.xml;D:\work\slfirestorm\indra\newview\app_settings\grids.xml;D:\work\slfirestorm\indra\newview\app_settings\growl_notifications.xml;D:\work\slfirestorm\indra\newview\app_settings\ignorable_dialogs.xml;D:\work\slfirestorm\indra\newview\app_settings\key_bindings.xml;D:\work\slfirestorm\indra\newview\app_settings\keywords.ini;D:\work\slfirestorm\indra\newview\app_settings\keywords_lsl_default.xml;D:\work\slfirestorm\indra\newview\app_settings\logcontrol.xml;D:\work\slfirestorm\indra\newview\app_settings\posestand.xml;D:\work\slfirestorm\indra\newview\app_settings\quick_preferences.xml;D:\work\slfirestorm\indra\newview\app_settings\scriptlibrary_aa.xml;D:\work\slfirestorm\indra\newview\app_settings\scriptlibrary_ossl.xml;D:\work\slfirestorm\indra\newview\app_settings\scriptlibrary_preproc.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_firestorm.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_hybrid.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_phoenix.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_v3.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_text.xml;D:\work\slfirestorm\indra\newview\app_settings\settings.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_crash_behavior.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_files.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_per_account.xml;D:\work\slfirestorm\indra\newview\app_settings\std_bump.ini;D:\work\slfirestorm\indra\newview\app_settings\trees.xml;D:\work\slfirestorm\indra\newview\app_settings\viewerart.xml;D:\work\slfirestorm\build-vc170-64\newview\packages-info.txt;D:\work\slfirestorm\indra\newview\featuretable_mac.txt;D:\work\slfirestorm\indra\newview\featuretable_linux.txt;D:\work\slfirestorm\build-vc170-64\packages\lib\release\growl.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\RelWithDebInfo\glod.dll;D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\RelWithDebInfo\SLPlugin.exe;D:\work\slfirestorm\build-vc170-64\media_plugins\cef\RelWithDebInfo\media_plugin_cef.dll;D:\work\slfirestorm\build-vc170-64\media_plugins\libvlc\RelWithDebInfo\media_plugin_libvlc.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\RelWithDebInfo\openjp2.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\RelWithDebInfo\vivoxsdk_x64.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\RelWithDebInfo\ortp_x64.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\RelWithDebInfo\fmod.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\newview\$(Configuration)\copy_touched.bat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing viewer_manifest copy</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\python3.10.exe" D:/work/slfirestorm/indra/newview/viewer_manifest.py --actions=copy --arch=x86_64 --artwork= --bugsplat= --fmodstudio=ON --openal=OFF --tracy=OFF --avx2=OFF --build=D:/work/slfirestorm/build-vc170-64/newview --buildtype=Release --channel=Firestorm-slpw --configuration=$(Configuration) --dest=D:/work/slfirestorm/build-vc170-64/newview/Release --grid=agni --source=D:/work/slfirestorm/indra/newview --touch=D:/work/slfirestorm/build-vc170-64/newview/Release/copy_touched.bat --versionfile=D:/work/slfirestorm/build-vc170-64/newview/viewer_version.txt --viewer_flavor=oss
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\indra\newview\viewer_manifest.py;D:\work\slfirestorm\build-vc170-64\llwebrtc\Release\llwebrtc.dll;D:\work\slfirestorm\etc\message.xml;D:\work\slfirestorm\scripts\messages\message_template.msg;D:\work\slfirestorm\build-vc170-64\sharedlibs\Release\llwebrtc.dll;D:\work\slfirestorm\build-vc170-64\packages\ca-bundle.crt;D:\work\slfirestorm\indra\newview\licenses-win32.txt;D:\work\slfirestorm\indra\newview\featuretable.txt;D:\work\slfirestorm\indra\newview\app_settings\anim.ini;D:\work\slfirestorm\indra\newview\app_settings\autoreplace.xml;D:\work\slfirestorm\indra\newview\app_settings\client_list_v2.xml;D:\work\slfirestorm\indra\newview\app_settings\cloud.xml;D:\work\slfirestorm\indra\newview\app_settings\cmd_line.xml;D:\work\slfirestorm\indra\newview\app_settings\commands.xml;D:\work\slfirestorm\indra\newview\app_settings\emoji_groups.xml;D:\work\slfirestorm\indra\newview\app_settings\foldertypes.xml;D:\work\slfirestorm\indra\newview\app_settings\graphic_preset_controls.xml;D:\work\slfirestorm\indra\newview\app_settings\grass.xml;D:\work\slfirestorm\indra\newview\app_settings\grids.xml;D:\work\slfirestorm\indra\newview\app_settings\growl_notifications.xml;D:\work\slfirestorm\indra\newview\app_settings\ignorable_dialogs.xml;D:\work\slfirestorm\indra\newview\app_settings\key_bindings.xml;D:\work\slfirestorm\indra\newview\app_settings\keywords.ini;D:\work\slfirestorm\indra\newview\app_settings\keywords_lsl_default.xml;D:\work\slfirestorm\indra\newview\app_settings\logcontrol.xml;D:\work\slfirestorm\indra\newview\app_settings\posestand.xml;D:\work\slfirestorm\indra\newview\app_settings\quick_preferences.xml;D:\work\slfirestorm\indra\newview\app_settings\scriptlibrary_aa.xml;D:\work\slfirestorm\indra\newview\app_settings\scriptlibrary_ossl.xml;D:\work\slfirestorm\indra\newview\app_settings\scriptlibrary_preproc.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_firestorm.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_hybrid.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_phoenix.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_v3.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_text.xml;D:\work\slfirestorm\indra\newview\app_settings\settings.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_crash_behavior.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_files.xml;D:\work\slfirestorm\indra\newview\app_settings\settings_per_account.xml;D:\work\slfirestorm\indra\newview\app_settings\std_bump.ini;D:\work\slfirestorm\indra\newview\app_settings\trees.xml;D:\work\slfirestorm\indra\newview\app_settings\viewerart.xml;D:\work\slfirestorm\build-vc170-64\newview\packages-info.txt;D:\work\slfirestorm\indra\newview\featuretable_mac.txt;D:\work\slfirestorm\indra\newview\featuretable_linux.txt;D:\work\slfirestorm\build-vc170-64\packages\lib\release\growl.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\Release\glod.dll;D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\Release\SLPlugin.exe;D:\work\slfirestorm\build-vc170-64\media_plugins\cef\Release\media_plugin_cef.dll;D:\work\slfirestorm\build-vc170-64\media_plugins\libvlc\Release\media_plugin_libvlc.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\Release\openjp2.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\Release\vivoxsdk_x64.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\Release\ortp_x64.dll;D:\work\slfirestorm\build-vc170-64\sharedlibs\Release\fmod.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\newview\$(Configuration)\copy_touched.bat</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\d2c8bfde287f6800ca186f5faf444d93\copy_w_viewer_manifest.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\newview\$(Configuration)\copy_touched.bat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\newview\CMakeFiles\copy_w_viewer_manifest</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\newview\$(Configuration)\copy_touched.bat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\newview\CMakeFiles\copy_w_viewer_manifest</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\indra\newview\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/slfirestorm/indra/newview/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/newview/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython3.cmake;D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Audio.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\BuildPackagesInfo.cmake;D:\work\slfirestorm\indra\cmake\BuildVersion.cmake;D:\work\slfirestorm\indra\cmake\CMakeCopyIfDifferent.cmake;D:\work\slfirestorm\indra\cmake\CURL.cmake;D:\work\slfirestorm\indra\cmake\ColladaDom.cmake;D:\work\slfirestorm\indra\cmake\CubemapToEquirectangularJS.cmake;D:\work\slfirestorm\indra\cmake\Discord.cmake;D:\work\slfirestorm\indra\cmake\DragDrop.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\FMODSTUDIO.cmake;D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake;D:\work\slfirestorm\indra\cmake\FreeType.cmake;D:\work\slfirestorm\indra\cmake\GLEXT.cmake;D:\work\slfirestorm\indra\cmake\GLH.cmake;D:\work\slfirestorm\indra\cmake\GLIB.cmake;D:\work\slfirestorm\indra\cmake\GLOD.cmake;D:\work\slfirestorm\indra\cmake\Growl.cmake;D:\work\slfirestorm\indra\cmake\Hunspell.cmake;D:\work\slfirestorm\indra\cmake\JPEGEncoderBasic.cmake;D:\work\slfirestorm\indra\cmake\LLAppearance.cmake;D:\work\slfirestorm\indra\cmake\LLAudio.cmake;D:\work\slfirestorm\indra\cmake\LLCA.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\LLCoreHttp.cmake;D:\work\slfirestorm\indra\cmake\LLImage.cmake;D:\work\slfirestorm\indra\cmake\LLKDU.cmake;D:\work\slfirestorm\indra\cmake\LLPhysicsExtensions.cmake;D:\work\slfirestorm\indra\cmake\LLPrimitive.cmake;D:\work\slfirestorm\indra\cmake\LLWindow.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\NDOF.cmake;D:\work\slfirestorm\indra\cmake\NGHTTP2.cmake;D:\work\slfirestorm\indra\cmake\NVAPI.cmake;D:\work\slfirestorm\indra\cmake\OPENAL.cmake;D:\work\slfirestorm\indra\cmake\OpenGL.cmake;D:\work\slfirestorm\indra\cmake\OpenSSL.cmake;D:\work\slfirestorm\indra\cmake\OpenXR.cmake;D:\work\slfirestorm\indra\cmake\PNG.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Python.cmake;D:\work\slfirestorm\indra\cmake\TemplateCheck.cmake;D:\work\slfirestorm\indra\cmake\ThreeJS.cmake;D:\work\slfirestorm\indra\cmake\TinyEXR.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\UI.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;D:\work\slfirestorm\indra\cmake\ViewerMiscLibs.cmake;D:\work\slfirestorm\indra\cmake\VisualLeakDetector.cmake;D:\work\slfirestorm\indra\cmake\VulkanGltf.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\bugsplat.cmake;D:\work\slfirestorm\indra\cmake\jemalloc.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;D:\work\slfirestorm\indra\newview\exoflickrkeys.h.in;D:\work\slfirestorm\indra\newview\fsdiscordkey.h.in;D:\work\slfirestorm\indra\newview\fsversionvalues.h.in;D:\work\slfirestorm\indra\newview\res\viewerRes.rc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\newview\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/slfirestorm/indra/newview/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/newview/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython3.cmake;D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Audio.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\BuildPackagesInfo.cmake;D:\work\slfirestorm\indra\cmake\BuildVersion.cmake;D:\work\slfirestorm\indra\cmake\CMakeCopyIfDifferent.cmake;D:\work\slfirestorm\indra\cmake\CURL.cmake;D:\work\slfirestorm\indra\cmake\ColladaDom.cmake;D:\work\slfirestorm\indra\cmake\CubemapToEquirectangularJS.cmake;D:\work\slfirestorm\indra\cmake\Discord.cmake;D:\work\slfirestorm\indra\cmake\DragDrop.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\FMODSTUDIO.cmake;D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake;D:\work\slfirestorm\indra\cmake\FreeType.cmake;D:\work\slfirestorm\indra\cmake\GLEXT.cmake;D:\work\slfirestorm\indra\cmake\GLH.cmake;D:\work\slfirestorm\indra\cmake\GLIB.cmake;D:\work\slfirestorm\indra\cmake\GLOD.cmake;D:\work\slfirestorm\indra\cmake\Growl.cmake;D:\work\slfirestorm\indra\cmake\Hunspell.cmake;D:\work\slfirestorm\indra\cmake\JPEGEncoderBasic.cmake;D:\work\slfirestorm\indra\cmake\LLAppearance.cmake;D:\work\slfirestorm\indra\cmake\LLAudio.cmake;D:\work\slfirestorm\indra\cmake\LLCA.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\LLCoreHttp.cmake;D:\work\slfirestorm\indra\cmake\LLImage.cmake;D:\work\slfirestorm\indra\cmake\LLKDU.cmake;D:\work\slfirestorm\indra\cmake\LLPhysicsExtensions.cmake;D:\work\slfirestorm\indra\cmake\LLPrimitive.cmake;D:\work\slfirestorm\indra\cmake\LLWindow.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\NDOF.cmake;D:\work\slfirestorm\indra\cmake\NGHTTP2.cmake;D:\work\slfirestorm\indra\cmake\NVAPI.cmake;D:\work\slfirestorm\indra\cmake\OPENAL.cmake;D:\work\slfirestorm\indra\cmake\OpenGL.cmake;D:\work\slfirestorm\indra\cmake\OpenSSL.cmake;D:\work\slfirestorm\indra\cmake\OpenXR.cmake;D:\work\slfirestorm\indra\cmake\PNG.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Python.cmake;D:\work\slfirestorm\indra\cmake\TemplateCheck.cmake;D:\work\slfirestorm\indra\cmake\ThreeJS.cmake;D:\work\slfirestorm\indra\cmake\TinyEXR.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\UI.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;D:\work\slfirestorm\indra\cmake\ViewerMiscLibs.cmake;D:\work\slfirestorm\indra\cmake\VisualLeakDetector.cmake;D:\work\slfirestorm\indra\cmake\VulkanGltf.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\bugsplat.cmake;D:\work\slfirestorm\indra\cmake\jemalloc.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;D:\work\slfirestorm\indra\newview\exoflickrkeys.h.in;D:\work\slfirestorm\indra\newview\fsdiscordkey.h.in;D:\work\slfirestorm\indra\newview\fsversionvalues.h.in;D:\work\slfirestorm\indra\newview\res\viewerRes.rc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\newview\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\slfirestorm\build-vc170-64\newview\CMakeFiles\copy_w_viewer_manifest">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\ZERO_CHECK.vcxproj">
+      <Project>{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\SLPlugin.vcxproj">
+      <Project>{02440B93-B1E1-3406-A7F6-D8A97FD0E835}</Project>
+      <Name>SLPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llwebrtc\llwebrtc.vcxproj">
+      <Project>{D0C8E401-6B49-3832-886C-F53F3279E4FF}</Project>
+      <Name>llwebrtc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\media_plugins\cef\media_plugin_cef.vcxproj">
+      <Project>{9EDA279E-91E0-3908-8581-9F7D3690BA3B}</Project>
+      <Name>media_plugin_cef</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\media_plugins\libvlc\media_plugin_libvlc.vcxproj">
+      <Project>{DE8C6B3E-3AB9-3E0F-A6D6-E36F5A471F39}</Project>
+      <Name>media_plugin_libvlc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llcommon\stage_third_party_libs.vcxproj">
+      <Project>{FE9F484E-EC53-3DC5-957A-272641810678}</Project>
+      <Name>stage_third_party_libs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

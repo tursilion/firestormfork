@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2D54168D-EF8F-3C8D-8A13-BEE9B9017CA1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>llcommon</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\llcommon\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llcommon.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llcommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\llcommon\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llcommon.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llcommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\indra\llcommon\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/slfirestorm/indra/llcommon/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/llcommon/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\CMakeCopyIfDifferent.cmake;D:\work\slfirestorm\indra\cmake\Copy3rdPartyLibs.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\FMODSTUDIO.cmake;D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\LLSharedLibs.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\OPENAL.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\bugsplat.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\llcommon\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/slfirestorm/indra/llcommon/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/llcommon/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\CMakeCopyIfDifferent.cmake;D:\work\slfirestorm\indra\cmake\Copy3rdPartyLibs.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\FMODSTUDIO.cmake;D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\LLSharedLibs.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\OPENAL.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\bugsplat.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\llcommon\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\apply.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\commoncontrol.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\indra_constants.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lazyeventapi.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llapp.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llapr.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llassettype.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llatomic.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llbase32.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llbase64.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llbitpack.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcallbacklist.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcleanup.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcommon.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcommonutils.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcoros.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcrc.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llcriticaldamp.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lldate.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lldeadmantimer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lldependencies.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lldictionary.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llerror.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llevent.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lleventapi.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lleventcoro.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lleventdispatcher.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lleventfilter.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llevents.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lleventtimer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llexception.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llfasttimer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llfile.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llfindlocale.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llfixedbuffer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llformat.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llframetimer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llheartbeat.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llheteromap.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llinitparam.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llinitdestroyclass.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llinstancetracker.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llkeybind.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llleap.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llleaplistener.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llliveappconfig.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lllivefile.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmd5.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmemory.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmemorystream.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmetrics.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmetricperformancetester.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmortician.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llmutex.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llptrto.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llpredicate.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llprocess.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llprocessor.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llprocinfo.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llqueuedthread.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llrand.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llrefcount.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llrun.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsd.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsdjson.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsdparam.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsdserialize.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsdserialize_xml.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsdutil.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsingleton.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llstacktrace.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llstreamqueue.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llstreamtools.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llstring.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llstringtable.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llsys.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lltempredirect.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llthread.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llthreadsafequeue.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lltimer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lltrace.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lltraceaccumulators.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lltracerecording.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lltracethreadrecorder.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lluri.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lluriparser.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\lluuid.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\llworkerthread.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\hbxxh.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\u64.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\threadpool.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\workqueue.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\StackWalker.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\nd\ndexceptions.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\nd\ndlogthrottle.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\nd\ndetw.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llcommon\tea.cpp" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\always_return.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\apply.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\chrono.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\classic_callback.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\commoncontrol.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\ctype_workaround.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\fix_macros.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\fsyspath.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\function_types.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\indra_constants.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lazyeventapi.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\linden_common.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llalignedarray.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llapp.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llapr.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llassettype.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llatomic.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llbase32.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llbase64.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llbitpack.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llboost.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcallbacklist.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcleanup.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcommon.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcommonutils.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcond.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcoros.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcrc.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llcriticaldamp.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldate.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldeadmantimer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldefs.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldependencies.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldepthstack.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldictionary.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lldoubledispatch.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llendianswizzle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llerror.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llerrorcontrol.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llevent.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lleventapi.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lleventcoro.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lleventdispatcher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lleventfilter.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llevents.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lleventemitter.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llexception.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llfasttimer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llfile.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llfindlocale.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llfixedbuffer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llformat.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llframetimer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llhandle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llhash.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llheartbeat.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llheteromap.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llindexedvector.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llinitdestroyclass.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llinitparam.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llinstancetracker.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llinstancetrackersubclass.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llkeybind.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llkeythrottle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llleap.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llleaplistener.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llliveappconfig.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lllivefile.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmainthreadtask.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmd5.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmemory.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmemorystream.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmetrics.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmetricperformancetester.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmortician.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llmutex.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llnametable.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llpointer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llprofiler.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llprofilercategories.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llpounceable.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llpredicate.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llpreprocessor.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llpriqueuemap.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llprocess.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llprocessor.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llprocinfo.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llptrto.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llqueuedthread.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llrand.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llrefcount.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llregex.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llregistry.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llrun.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsafehandle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsd.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsdjson.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsdparam.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsdserialize.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsdserialize_xml.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsdutil.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsimplehash.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsingleton.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstacktrace.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstl.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstreamqueue.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstreamtools.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstrider.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstring.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstringtable.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstaticstringtable.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llstatsaccumulator.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llsys.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltempredirect.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llthread.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llthreadlocalstorage.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llthreadsafequeue.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltimer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltrace.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltraceaccumulators.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltracerecording.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltracethreadrecorder.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lltreeiterators.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llunits.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llunittype.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lluri.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lluriparser.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lluuid.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llwin32headers.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\llworkerthread.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\hbxxh.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\lockstatic.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\stdtypes.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\stringize.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\threadpool.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\threadpool_fwd.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\threadsafeschedule.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\timer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\tuple.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\u64.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\workqueue.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\StackWalker.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\nd\ndexceptions.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\nd\ndlogthrottle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\nd\ndetw.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llcommon\tea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\ZERO_CHECK.vcxproj">
+      <Project>{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llcommon\stage_third_party_libs.vcxproj">
+      <Project>{FE9F484E-EC53-3DC5-957A-272641810678}</Project>
+      <Name>stage_third_party_libs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

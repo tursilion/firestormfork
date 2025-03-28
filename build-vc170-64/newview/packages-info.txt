@@ -1,0 +1,145 @@
+Firestorm-slpw 7.1.12.77385
+Copyright (c) 2025, The Phoenix Firestorm Project, Inc.
+
+apr_suite: 1.7.4-10338381102
+Copyright © 2012 The Apache Software Foundation, Licensed under the Apache License, Version 2.0.
+
+boost: 1.86
+(see individual source files)
+
+cef-bin: 118.4.1_g3dd6078_chromium-118.0.5993.54
+Copyright (c) 2008-2020 Marshall A. Greenblatt. Portions Copyright (c) 2006-2009 Google Inc. All rights reserved
+
+colladadom: 2.3.0-r8
+Copyright 2006 Sony Computer Entertainment Inc.
+
+cubemaptoequirectangular: 1.1.0
+Copyright (c) 2017 Jaume Sanchez Elias, http://www.clicktorelease.com
+
+curl: 7.54.1-10342910827
+Copyright (c) 1996 - 2014, Daniel Stenberg, (daniel@haxx.se).
+
+dictionaries: 2.46203
+Copyright 2014 Apache OpenOffice software and other Open Source authors
+
+discord-rpc: 3.4.0
+Copyright 2019 Discord, Inc.
+
+dullahan: 1.14.0.202408091639_118.4.1_g3dd6078_chromium-118.0.5993.54
+Copyright (c) 2017, Linden Research, Inc.
+
+emoji_shortcodes: 15.3.2.10207138275
+Copyright 2017-2019 Miles Johnson.
+
+expat: 2.6.2-r5
+Copyright (c) 1998-2000 Thai Open Source Software Center Ltd and Clark Cooper - Copyright (c) 2001-2022 Expat maintainers.
+
+fmodstudio: 2.02.27
+FMOD Studio, copyright (c) Firelight Technologies Pty, Ltd., 2012-2019.
+
+freetype: 2.13.3-cb2e120
+Copyright 2006, 2007, 2008, 2009, 2010 by David Turner, Robert Wilhelm, and Werner Lemberg.
+
+glext: 68
+Copyright (c) 2007-2010 The Khronos Group Inc.
+
+glh_linear: 1.0.1-dev4
+Copyright (c) 2000 Cass Everitt
+
+glm: v1.0.1
+Copyright (c) 2005 - G-Truc Creation
+
+glod: 1.0pre3.vs2017-1906061512
+Copyright 2003 Jonathan Cohen, Nat Duca, David Luebke, Brenden Schubert - Johns Hopkins University and University of Virginia
+
+gntp-growl: 1.0
+Yasuhiro Matsumoto,Peter Sinnott,Dither
+
+jpegencoderbasic: 1.0
+Andreas Ritter, www.bytestrom.eu, 11/2009
+
+libhunspell: 1.7.2.10207243663
+LGPL 2.1
+
+libjpeg-turbo: 3.0.3-r2
+Copyright (C)2009-2024 D. R. Commander. All Rights Reserved. Copyright (C)2015 Viktor Szathmáry. All Rights Reserved.
+
+libndofdev: 0.1.8e9edc7
+Copyright (c) 2007, 3Dconnexion, Inc. - All rights reserved.
+
+libpng: 1.6.43-r2
+Copyright (c) 2004, 2006-2013 Glenn Randers-Pehrson
+
+libxml2: 2.13.3-r1
+Copyright (C) 1998-2012 Daniel Veillard.  All Rights Reserved.
+
+llca: 202407221423.0
+Copyright (c) 2016, Linden Research, Inc.; data provided by the Mozilla NSS Project.
+
+meshoptimizer: 210.0.0-r2
+Copyright (c) 2016-2021 Arseny Kapoulkine
+
+mikktspace: 1
+Copyright (C) 2011 by Morten S. Mikkelsen, Copyright (C) 2022 Blender Authors
+
+minizip-ng: 4.0.7-r1
+This project uses the zlib license. Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler
+
+nanosvg: 2022.09.27
+Copyright (c) 2013-14 Mikko Mononen
+
+ndPhysicsStub: 1.0
+Khaled Mamou (HACD) / Nicky Dasmijn (integration into for SL viewer)
+
+nghttp2: 1.62.1
+Copyright (c) 2012, 2014, 2015, 2016 Tatsuhiro Tsujikawa
+Copyright (c) 2012, 2014, 2015, 2016 nghttp2 contributors
+
+nvapi: 560.0.0-r1
+Copyright (c) 2024 NVIDIA CORPORATION and AFFILIATES. All rights reserved.
+
+ogg_vorbis: 1.3.5-1.3.7.10341271136
+Copyright (c) 2002, Xiph.org Foundation
+
+openjpeg: 2.5.2.10604495243
+Copyright (c) 2002-2007, Communications and Remote Sensing Laboratory, Universite catholique de Louvain (UCL), Belgium; Copyright (c) 2002-2007, Professor Benoit Macq; Copyright (c) 2001-2003, David Janssens; Copyright (c) 2002-2003, Yannick Verschueren; Copyright (c) 2003-2007, Francois-Olivier Devaux and Antonin Descampe; Copyright (c) 2005, Herve Drolon, FreeImage Team; Copyright (c) 2006-2007, Parvatha Elangovan; Copyright (c) 2008, Jerome Fimes, Communications & Systemes <jerome.fimes@c-s.fr>; Copyright (c) 2010-2011, Kaori Hagihara; Copyright (c) 2011-2012, Centre National d'Etudes Spatiales (CNES), France; Copyright (c) 2012, CS Systemes d'Information, France;
+
+openssl: 1.1.1w
+Copyright (c) 1998-2011 The OpenSSL Project.  All rights reserved; Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+
+openxr: 1.1.40-r1
+Copyright 2017-2024, The Khronos Group Inc.
+
+slvoice: 4.10.0000.32327.5fc3fe7c.5942f08
+2010 Vivox, including audio coding using Polycom¨ Siren14TM (ITU-T Rec. G.722.1 Annex C)
+
+threejs: 0.132.2
+Copyright © 2010-2021 three.js authors
+
+tinyexr: 1.0.9-5e8947c
+Copyright (c) 2014 - 2021, Syoyo Fujita and many contributors.
+
+tinygltf: 2.9.3-r1
+// Copyright (c) 2015 - Present Syoyo Fujita, Aurélien Chatelain and many contributors.
+
+tut: 2008.11.30
+Copyright 2002-2006 Vladimir Dyuzhev, Copyright 2007 Denis Kononenko, Copyright 2008-2009 Michał Rzechonek
+
+viewer-fonts: 1.0.0.242151216
+Copyright 2016-2022 Brad Erickson CC-BY-4.0/MIT, Copyright 2016-2022 Twitter, Inc. CC-BY-4.0, Copyright 2013 Joe Loughry and Terence Eden MIT
+
+vlc-bin: 3.0.21.10218721728
+Copyright (C) 1998-2016 VLC authors and VideoLAN
+
+vulkan_gltf: 1.0.0
+Copyright (c) 2018 Sascha Willems
+
+webrtc: m114.5735.08.72-test.10444682919
+Copyright (c) 2011, The WebRTC project authors. All rights reserved.
+
+xxhash: 0.8.2-10285735820
+Copyright (c) 2012-2021 Yann Collet
+
+zlib-ng: 2.2.1-r2
+Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler
+

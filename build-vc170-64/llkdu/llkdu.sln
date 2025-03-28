@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{C83EF64C-C01C-39D5-91EF-CB3E667B1F5C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE} = {9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\\ZERO_CHECK.vcxproj", "{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C83EF64C-C01C-39D5-91EF-CB3E667B1F5C}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{C83EF64C-C01C-39D5-91EF-CB3E667B1F5C}.Release|x64.ActiveCfg = Release|x64
+		{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}.Release|x64.ActiveCfg = Release|x64
+		{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBE12DD4-D55B-355C-AE65-8F6309C8CD23}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

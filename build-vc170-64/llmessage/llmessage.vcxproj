@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DB628A8-3CB4-3874-A1EC-C3A0289997D2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>llmessage</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\llmessage\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llmessage.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">llmessage</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\llmessage\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llmessage.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">llmessage</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\indra\llxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/meshoptimizer" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/nghttp2" /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\indra\llxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/meshoptimizer" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/nghttp2" /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\indra\llmessage\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/slfirestorm/indra/llmessage/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/llmessage/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython3.cmake;D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\CURL.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake;D:\work\slfirestorm\indra\cmake\LLAddBuildTest.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\LLCoreHttp.cmake;D:\work\slfirestorm\indra\cmake\LLTestCommand.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\NGHTTP2.cmake;D:\work\slfirestorm\indra\cmake\OpenSSL.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Python.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\Tut.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\bugsplat.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\llmessage\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/slfirestorm/indra/llmessage/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/llmessage/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython\Support.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPython3.cmake;D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\CURL.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake;D:\work\slfirestorm\indra\cmake\LLAddBuildTest.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\LLCoreHttp.cmake;D:\work\slfirestorm\indra\cmake\LLTestCommand.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\NGHTTP2.cmake;D:\work\slfirestorm\indra\cmake\OpenSSL.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Python.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\Tut.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\bugsplat.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\llmessage\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\fscorehttputil.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llassetstorage.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llavatarname.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llavatarnamecache.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llblowfishcipher.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llbuffer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llbufferstream.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llcachename.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llchainio.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llcircuit.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llclassifiedflags.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llcoproceduremanager.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llcorehttputil.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lldatapacker.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lldispatcher.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llexperiencecache.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llgenericstreamingmessage.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llhost.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llhttpnode.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llhttpsdhandler.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llinstantmessage.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lliobuffer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lliohttpserver.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lliopipe.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lliosocket.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llioutil.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmail.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmessagebuilder.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmessageconfig.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmessagereader.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmessagetemplate.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmessagetemplateparser.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llmessagethrottle.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llnamevalue.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llnullcipher.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llpacketack.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llpacketbuffer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llpacketring.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llpartdata.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llproxy.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llpumpio.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llsdappservices.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llsdhttpserver.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llsdmessagebuilder.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llsdmessagereader.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llservicebuilder.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llservice.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llstoredmessage.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltemplatemessagebuilder.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltemplatemessagedispatcher.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltemplatemessagereader.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llthrottle.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltransfermanager.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltransfersourceasset.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltransfersourcefile.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltransfertargetfile.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltransfertargetvfile.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lltrustedmessageservice.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\lluseroperation.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llxfer.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llxfer_file.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llxfermanager.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llxfer_mem.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llxfer_vfile.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\llxorcipher.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\machine.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\message.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\message_prehash.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\message_string_table.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\net.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\partsyspacket.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\patch_code.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\patch_dct.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\patch_idct.cpp" />
+    <ClCompile Include="D:\work\slfirestorm\indra\llmessage\sound_ids.cpp" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\fscorehttputil.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llassetstorage.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llavatarname.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llavatarnamecache.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llblowfishcipher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llbuffer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llbufferstream.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llcachename.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llchainio.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llcipher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llcircuit.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llclassifiedflags.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llcoproceduremanager.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llcorehttputil.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lldatapacker.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lldbstrings.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lldispatcher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lleventflags.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llexperiencecache.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llextendedstatus.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llfollowcamparams.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llgenericstreamingmessage.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llhost.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llhttpnode.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llhttpnodeadapter.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llhttpsdhandler.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llinstantmessage.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llinvite.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lliobuffer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lliohttpserver.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lliopipe.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lliosocket.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llioutil.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llloginflags.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmail.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmessagebuilder.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmessageconfig.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmessagereader.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmessagetemplate.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmessagetemplateparser.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmessagethrottle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llmsgvariabletype.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llnamevalue.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llnullcipher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llpacketack.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llpacketbuffer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llpacketring.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llpartdata.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llpumpio.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llproxy.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llqueryflags.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llregionflags.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llregionhandle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llsdappservices.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llsdhttpserver.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llsdmessagebuilder.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llsdmessagereader.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llservice.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llservicebuilder.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llstoredmessage.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltaskname.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llteleportflags.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltemplatemessagebuilder.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltemplatemessagedispatcher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltemplatemessagereader.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llthrottle.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltransfermanager.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltransfersourceasset.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltransfersourcefile.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltransfertargetfile.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltransfertargetvfile.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lltrustedmessageservice.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\lluseroperation.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llvehicleparams.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llxfer.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llxfermanager.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llxfer_file.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llxfer_mem.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llxfer_vfile.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\llxorcipher.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\machine.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\mean_collision_data.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\message.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\message_prehash.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\net.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\partsyspacket.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\patch_code.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\patch_dct.h" />
+    <ClInclude Include="D:\work\slfirestorm\indra\llmessage\sound_ids.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\ZERO_CHECK.vcxproj">
+      <Project>{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llcommon\llcommon.vcxproj">
+      <Project>{2D54168D-EF8F-3C8D-8A13-BEE9B9017CA1}</Project>
+      <Name>llcommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llcorehttp\llcorehttp.vcxproj">
+      <Project>{4B95DE5D-DBA5-3F4B-8433-89D2E0669F5E}</Project>
+      <Name>llcorehttp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llfilesystem\llfilesystem.vcxproj">
+      <Project>{FADE55C4-48AB-39BB-9040-649D693444C3}</Project>
+      <Name>llfilesystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llmath\llmath.vcxproj">
+      <Project>{8FC504BE-1762-346F-92B1-1DF67EFC3D25}</Project>
+      <Name>llmath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llxml\llxml.vcxproj">
+      <Project>{18778A46-1E4A-37BE-BAF6-CDBBBF3A12A2}</Project>
+      <Name>llxml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

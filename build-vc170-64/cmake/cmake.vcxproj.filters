@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\slfirestorm\indra\cmake\cmake_dummy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\indra\cmake\CMakeLists.txt">
+      <Filter>Shared Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\slfirestorm\indra\cmake\00-Common.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\APR.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Audio.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Boost.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\bugsplat.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\BuildVersion.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\CEFPlugin.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\CMakeCopyIfDifferent.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\ConfigurePkgConfig.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\CURL.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Copy3rdPartyLibs.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\DBusGlib.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\DeploySharedLibs.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Discord.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\DragDrop.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\EXPAT.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\FMODSTUDIO.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\FreeType.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLEXT.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLH.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLM.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLOD.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Havok.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Hunspell.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLAddBuildTest.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLAppearance.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLAudio.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLCommon.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLImage.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLKDU.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLPhysicsExtensions.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLPrimitive.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLSharedLibs.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLTestCommand.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLWindow.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Linking.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\MediaPluginBase.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Meshoptimizer.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\NDOF.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OPENAL.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OpenGL.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OpenJPEG.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OpenSSL.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\PNG.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\PluginAPI.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Prebuilt.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\PulseAudio.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Python.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\TemplateCheck.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\TinyEXR.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\TinyGLTF.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Tut.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\UI.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\UnixInstall.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Variables.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\ViewerMiscLibs.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\VisualLeakDetector.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LibVLCPlugin.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\WebRTC.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\xxHash.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake">
+      <Filter>Shared Rules</Filter>
+    </None>
+    <None Include="D:\work\slfirestorm\indra\CMakeLists.txt">
+      <Filter>Master Rules</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Master Rules">
+      <UniqueIdentifier>{9172CF9F-7306-3E10-A370-93405E975EDF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared Rules">
+      <UniqueIdentifier>{04DCCC6B-DFD7-3D6B-8EF9-C1B7B015DF1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CD52CE67-E04E-3DA8-8470-138A6CA4F149}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

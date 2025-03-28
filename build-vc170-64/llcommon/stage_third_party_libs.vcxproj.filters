@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\c23f79315c8c84d9.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\bb22e06673660d8c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\edb9acc7c91daba6.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\6c8b583e97628df1.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\abf6d67a126409b4.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\2b73f6c11da30e7a.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\3745de6b0e1ad1d7.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\5972108cd12df035.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\55372e1a5a27e1ba.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\333f8e88cf30f09d.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\837019cd95297a8e.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\1db45919c92b77ac.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\f57a0194bd198c3e.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\32b72f2a44912b32.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\aa38b7452fa6c82d.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\build-vc170-64\CMakeFiles\339ace481d22f6afa13660b3f83056e9\stage_third_party_libs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\work\slfirestorm\indra\llcommon\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\slfirestorm\build-vc170-64\llcommon\CMakeFiles\stage_third_party_libs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DB653F8A-ABE7-3E63-92E9-6AA6DEAD4A7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

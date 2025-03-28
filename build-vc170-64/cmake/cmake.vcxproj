@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C51E04AC-6144-3DD7-80C6-B66F835DE1A6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>cmake</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\cmake\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cmake.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cmake</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\cmake\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cmake.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cmake</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\indra\cmake\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/slfirestorm/indra/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/slfirestorm/indra/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/cmake/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\Variables.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\slfirestorm\indra\cmake\cmake_dummy.cpp" />
+    <None Include="D:\work\slfirestorm\indra\cmake\00-Common.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\APR.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Audio.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Boost.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\bugsplat.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\BuildVersion.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\CEFPlugin.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\CMakeCopyIfDifferent.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\ConfigurePkgConfig.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\CURL.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Copy3rdPartyLibs.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\DBusGlib.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\DeploySharedLibs.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Discord.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\DragDrop.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\EXPAT.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\FindAutobuild.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\FMODSTUDIO.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\FreeType.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLEXT.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLH.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLM.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\GLOD.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Havok.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Hunspell.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLAddBuildTest.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLAppearance.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLAudio.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLCommon.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLImage.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLKDU.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLPhysicsExtensions.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLPrimitive.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLSharedLibs.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLTestCommand.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LLWindow.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Linking.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\MediaPluginBase.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Meshoptimizer.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\NDOF.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OPENAL.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OpenGL.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OpenJPEG.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\OpenSSL.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\PNG.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\PluginAPI.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Prebuilt.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\PulseAudio.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Python.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\TemplateCheck.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\TinyEXR.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\TinyGLTF.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Tut.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\UI.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\UnixInstall.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\Variables.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\ViewerMiscLibs.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\VisualLeakDetector.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\LibVLCPlugin.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\WebRTC.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\xxHash.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake">
+    </None>
+    <None Include="D:\work\slfirestorm\indra\CMakeLists.txt">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\ZERO_CHECK.vcxproj">
+      <Project>{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

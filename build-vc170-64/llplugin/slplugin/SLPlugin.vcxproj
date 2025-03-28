@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02440B93-B1E1-3406-A7F6-D8A97FD0E835}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>SLPlugin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SLPlugin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SLPlugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SLPlugin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SLPlugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llplugin;D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llrender;D:\work\slfirestorm\indra\llimage;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\indra\llwindow;D:\work\slfirestorm\indra\llmessage;D:\work\slfirestorm\indra\llcorehttp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/meshoptimizer" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/openjpeg" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/libpng16" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/freetype2" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/nghttp2" /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_WITH_DEBUG_INFO=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llplugin;D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llrender;D:\work\slfirestorm\indra\llimage;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\indra\llwindow;D:\work\slfirestorm\indra\llmessage;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\openjpeg;D:\work\slfirestorm\build-vc170-64\packages\include\libpng16;D:\work\slfirestorm\build-vc170-64\packages\include\freetype2;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llplugin;D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llrender;D:\work\slfirestorm\indra\llimage;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\indra\llwindow;D:\work\slfirestorm\indra\llmessage;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\openjpeg;D:\work\slfirestorm\build-vc170-64\packages\include\libpng16;D:\work\slfirestorm\build-vc170-64\packages\include\freetype2;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\RelWithDebInfo\llplugin.lib;..\..\llmessage\RelWithDebInfo\llmessage.lib;..\..\llcommon\RelWithDebInfo\llcommon.lib;..\..\llcorehttp\RelWithDebInfo\llcorehttp.lib;..\..\packages\lib\release\libcurl.lib;..\..\packages\lib\release\libssl.lib;..\..\packages\lib\release\libcrypto.lib;Crypt32.lib;nghttp2.lib;..\..\llrender\RelWithDebInfo\llrender.lib;..\..\llwindow\RelWithDebInfo\llwindow.lib;..\..\llrender\RelWithDebInfo\llrender.lib;..\..\llwindow\RelWithDebInfo\llwindow.lib;..\..\packages\lib\release\freetype.lib;glu32.lib;opengl32.lib;..\..\llxml\RelWithDebInfo\llxml.lib;..\..\llimage\RelWithDebInfo\llimage.lib;..\..\llimagej2coj\RelWithDebInfo\llimagej2coj.lib;..\..\llimage\RelWithDebInfo\llimage.lib;..\..\llimagej2coj\RelWithDebInfo\llimagej2coj.lib;..\..\llmath\RelWithDebInfo\llmath.lib;..\..\llmeshoptimizer\RelWithDebInfo\llmeshoptimizer.lib;..\..\llmath\RelWithDebInfo\llmath.lib;..\..\llmeshoptimizer\RelWithDebInfo\llmeshoptimizer.lib;meshoptimizer.lib;..\..\llfilesystem\RelWithDebInfo\llfilesystem.lib;..\..\packages\lib\release\libpng16.lib;..\..\packages\lib\release\jpeg.lib;..\..\llcommon\RelWithDebInfo\llcommon.lib;..\..\packages\lib\release\apr-1.lib;..\..\packages\lib\release\aprutil-1.lib;..\..\packages\lib\release\libexpat.lib;..\..\packages\lib\release\zlib.lib;libboost_context-mt-x64.lib;libboost_fiber-mt-x64.lib;libboost_filesystem-mt-x64.lib;libboost_program_options-mt-x64.lib;libboost_regex-mt-x64.lib;libboost_system-mt-x64.lib;libboost_thread-mt-x64.lib;libboost_url-mt-x64.lib;libboost_wave-mt-x64.lib;mswsock.lib;winmm.lib;wldap32.lib;gdi32.lib;dbghelp.lib;rpcrt4.lib;legacy_stdio_definitions.lib;openjp2.lib;ole32.lib;opengl32.lib;dxguid.lib;kernel32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;shell32.lib;Vfw32.lib;wer.lib;winspool.lib;imm32.lib;comdlg32.lib;dxgi.lib;d3d9.lib;wsock32.lib;ws2_32.lib;psapi.lib;netapi32.lib;advapi32.lib;user32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/work/slfirestorm/build-vc170-64/packages/lib/relwithdebinfo;D:/work/slfirestorm/build-vc170-64/packages/lib/relwithdebinfo/$(Configuration);D:/work/slfirestorm/build-vc170-64/packages/lib/release;D:/work/slfirestorm/build-vc170-64/packages/lib/release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/slfirestorm/build-vc170-64/llplugin/slplugin/RelWithDebInfo/SLPlugin.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/work/slfirestorm/build-vc170-64/llplugin/slplugin/RelWithDebInfo/SLPlugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llplugin;D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llrender;D:\work\slfirestorm\indra\llimage;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\indra\llwindow;D:\work\slfirestorm\indra\llmessage;D:\work\slfirestorm\indra\llcorehttp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/meshoptimizer" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/openjpeg" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/libpng16" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/freetype2" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/nghttp2" /Zo /c</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llplugin;D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llrender;D:\work\slfirestorm\indra\llimage;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\indra\llwindow;D:\work\slfirestorm\indra\llmessage;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\openjpeg;D:\work\slfirestorm\build-vc170-64\packages\include\libpng16;D:\work\slfirestorm\build-vc170-64\packages\include\freetype2;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llplugin;D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmath;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llrender;D:\work\slfirestorm\indra\llimage;D:\work\slfirestorm\indra\llfilesystem;D:\work\slfirestorm\indra\llxml;D:\work\slfirestorm\indra\llwindow;D:\work\slfirestorm\indra\llmessage;D:\work\slfirestorm\indra\llcorehttp;D:\work\slfirestorm\build-vc170-64\packages\include\apr-1;D:\work\slfirestorm\build-vc170-64\packages\include;D:\work\slfirestorm\build-vc170-64\packages\include\zlib-ng;D:\work\slfirestorm\build-vc170-64\packages\include\meshoptimizer;D:\work\slfirestorm\build-vc170-64\packages\include\openjpeg;D:\work\slfirestorm\build-vc170-64\packages\include\libpng16;D:\work\slfirestorm\build-vc170-64\packages\include\freetype2;D:\work\slfirestorm\build-vc170-64\packages\include\nghttp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Release\llplugin.lib;..\..\llmessage\Release\llmessage.lib;..\..\llcommon\Release\llcommon.lib;..\..\llcorehttp\Release\llcorehttp.lib;..\..\packages\lib\release\libcurl.lib;..\..\packages\lib\release\libssl.lib;..\..\packages\lib\release\libcrypto.lib;Crypt32.lib;nghttp2.lib;..\..\llrender\Release\llrender.lib;..\..\llwindow\Release\llwindow.lib;..\..\llrender\Release\llrender.lib;..\..\llwindow\Release\llwindow.lib;..\..\packages\lib\release\freetype.lib;glu32.lib;opengl32.lib;..\..\llxml\Release\llxml.lib;..\..\llimage\Release\llimage.lib;..\..\llimagej2coj\Release\llimagej2coj.lib;..\..\llimage\Release\llimage.lib;..\..\llimagej2coj\Release\llimagej2coj.lib;..\..\llmath\Release\llmath.lib;..\..\llmeshoptimizer\Release\llmeshoptimizer.lib;..\..\llmath\Release\llmath.lib;..\..\llmeshoptimizer\Release\llmeshoptimizer.lib;meshoptimizer.lib;..\..\llfilesystem\Release\llfilesystem.lib;..\..\packages\lib\release\libpng16.lib;..\..\packages\lib\release\jpeg.lib;..\..\llcommon\Release\llcommon.lib;..\..\packages\lib\release\apr-1.lib;..\..\packages\lib\release\aprutil-1.lib;..\..\packages\lib\release\libexpat.lib;..\..\packages\lib\release\zlib.lib;libboost_context-mt-x64.lib;libboost_fiber-mt-x64.lib;libboost_filesystem-mt-x64.lib;libboost_program_options-mt-x64.lib;libboost_regex-mt-x64.lib;libboost_system-mt-x64.lib;libboost_thread-mt-x64.lib;libboost_url-mt-x64.lib;libboost_wave-mt-x64.lib;mswsock.lib;winmm.lib;wldap32.lib;gdi32.lib;dbghelp.lib;rpcrt4.lib;legacy_stdio_definitions.lib;openjp2.lib;ole32.lib;opengl32.lib;dxguid.lib;kernel32.lib;odbc32.lib;odbccp32.lib;oleaut32.lib;shell32.lib;Vfw32.lib;wer.lib;winspool.lib;imm32.lib;comdlg32.lib;dxgi.lib;d3d9.lib;wsock32.lib;ws2_32.lib;psapi.lib;netapi32.lib;advapi32.lib;user32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/work/slfirestorm/build-vc170-64/packages/lib/release;D:/work/slfirestorm/build-vc170-64/packages/lib/release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/slfirestorm/build-vc170-64/llplugin/slplugin/Release/SLPlugin.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/work/slfirestorm/build-vc170-64/llplugin/slplugin/Release/SLPlugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\slfirestorm\indra\llplugin\slplugin\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/slfirestorm/indra/llplugin/slplugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/llplugin/slplugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\PluginAPI.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/slfirestorm/indra/llplugin/slplugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/work/slfirestorm/indra -BD:/work/slfirestorm/build-vc170-64 --check-stamp-file D:/work/slfirestorm/build-vc170-64/llplugin/slplugin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\indra\cmake\00-Common.cmake;D:\work\slfirestorm\indra\cmake\APR.cmake;D:\work\slfirestorm\indra\cmake\Boost.cmake;D:\work\slfirestorm\indra\cmake\EXPAT.cmake;D:\work\slfirestorm\indra\cmake\LLCommon.cmake;D:\work\slfirestorm\indra\cmake\Linking.cmake;D:\work\slfirestorm\indra\cmake\PluginAPI.cmake;D:\work\slfirestorm\indra\cmake\Prebuilt.cmake;D:\work\slfirestorm\indra\cmake\Tracy.cmake;D:\work\slfirestorm\indra\cmake\ZLIBNG.cmake;D:\work\slfirestorm\indra\cmake\xxHash.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\slfirestorm\build-vc170-64\llplugin\slplugin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\slfirestorm\indra\llplugin\slplugin\slplugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\ZERO_CHECK.vcxproj">
+      <Project>{9DA13250-D6C5-3A08-8DFD-52EF5BA53FFE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llcommon\llcommon.vcxproj">
+      <Project>{2D54168D-EF8F-3C8D-8A13-BEE9B9017CA1}</Project>
+      <Name>llcommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llcorehttp\llcorehttp.vcxproj">
+      <Project>{4B95DE5D-DBA5-3F4B-8433-89D2E0669F5E}</Project>
+      <Name>llcorehttp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llfilesystem\llfilesystem.vcxproj">
+      <Project>{FADE55C4-48AB-39BB-9040-649D693444C3}</Project>
+      <Name>llfilesystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llimage\llimage.vcxproj">
+      <Project>{88EDB398-7C7C-3A1D-8D25-3832E4033C69}</Project>
+      <Name>llimage</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llmath\llmath.vcxproj">
+      <Project>{8FC504BE-1762-346F-92B1-1DF67EFC3D25}</Project>
+      <Name>llmath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llmessage\llmessage.vcxproj">
+      <Project>{7DB628A8-3CB4-3874-A1EC-C3A0289997D2}</Project>
+      <Name>llmessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llplugin\llplugin.vcxproj">
+      <Project>{623522F8-C68A-39BC-A400-322F8D601882}</Project>
+      <Name>llplugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llrender\llrender.vcxproj">
+      <Project>{AAA009E3-F1A4-3D90-8FC4-C151F153119B}</Project>
+      <Name>llrender</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\slfirestorm\build-vc170-64\llxml\llxml.vcxproj">
+      <Project>{18778A46-1E4A-37BE-BAF6-CDBBBF3A12A2}</Project>
+      <Name>llxml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
