@@ -102,7 +102,7 @@
       <AdditionalIncludeDirectories>D:\work\slfirestorm\indra\llcommon;D:\work\slfirestorm\indra\llmeshoptimizer;D:\work\slfirestorm\indra\llmath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/apr-1" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/zlib-ng" /external:I "D:/work/slfirestorm/build-vc170-64/packages/include/meshoptimizer" /Zo /c</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
       <ConformanceMode>true</ConformanceMode>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -127,6 +127,8 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;APR_DECLARE_STATIC=1;APU_DECLARE_STATIC=1;API_DECLARE_STATIC=1;XML_STATIC=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>

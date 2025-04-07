@@ -735,34 +735,38 @@ bool LLGestureMgr::triggerAndReviseString(const std::string& utf8str, std::strin
         gesture = NULL;
     }
 
-    // This appears to be the one that is actually called
+    // ** This appears to be the one that is actually called **
     // mb: if not a gesture, and starts with '/', check for built-ins and discard anyway
     if (!found_gestures)
     {
         if (utf8str[0] == '/')
         {
-            // in SLPW, this is ALWAYS a gesture, so we aren't going to return it
-            // but as a hack, /. will toggle the voice listen point
-            if (utf8str[1] == '.')
-            {
-                LLSD dummy;
+            if ((utf8str[1] == 'm')&&(utf8str[2]=='e')&&(utf8str[3]==' ')) {
+                // ignore here, not a gesture
+            } else {
+                // in SLPW, this is ALWAYS a gesture (except /me), so we aren't going to return it
+                // but as a hack, /. will toggle the voice listen point
+                if ((utf8str[1] == '.') && (utf8str[2] == '\0'))
+                {
+                    LLSD dummy;
 
-                S32 earLoc = gSavedSettings.getS32("VoiceEarLocation");
-                if (earLoc)
-                {
-                    earLoc = 0;
+                    S32 earLoc = gSavedSettings.getS32("VoiceEarLocation");
+                    if (earLoc)
+                    {
+                        earLoc = 0;
+                    }
+                    else
+                    {
+                        earLoc = 1;
+                    }
+                    gSavedSettings.setS32("VoiceEarLocation", earLoc);
+                    handleVoiceClientPrefsChanged(dummy); // input arg is not used
                 }
-                else
-                {
-                    earLoc = 1;
+                if (revised_string) {
+                    revised_string->clear();
                 }
-                gSavedSettings.setS32("VoiceEarLocation", earLoc);
-                handleVoiceClientPrefsChanged(dummy); // input arg is not used
+                found_gestures = true;
             }
-            if (revised_string) {
-                revised_string->clear();
-            }
-            found_gestures = true;
         }
     }
 

@@ -98,7 +98,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different D:/work/slfirestorm/build-vc170-64/llwebrtc/RelWithDebInfo/llwebrtc.dll D:/work/slfirestorm/build-vc170-64/sharedlibs/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
@@ -153,6 +154,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR="Release";llwebrtc_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EBUG;LL_RELEASE=1;LL_RELEASE_FOR_DOWNLOAD=1;NDEBUG;_SECURE_STL=0;_HAS_ITERATOR_DEBUGGING=0;LL_WINDOWS=1;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x0601;LL_OS_DRAGDROP_ENABLED=1;LIB_NDOF=1;OPENSIM;ADDRESS_SIZE=64;BOOST_BIND_GLOBAL_PLACEHOLDERS;GLM_FORCE_DEFAULT_ALIGNED_GENTYPES=1;GLM_FORCE_SSE2=1;WIN32_LEAN_AND_MEAN;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CMAKE_INTDIR=\"Release\";llwebrtc_EXPORTS</PreprocessorDefinitions>
@@ -167,7 +169,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different D:/work/slfirestorm/build-vc170-64/llwebrtc/Release/llwebrtc.dll D:/work/slfirestorm/build-vc170-64/sharedlibs/Release
 if %errorlevel% neq 0 goto :cmEnd

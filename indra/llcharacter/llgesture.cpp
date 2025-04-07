@@ -257,26 +257,28 @@ bool LLGestureList::triggerAndReviseString(const std::string &string, std::strin
         first_token = false;
     }
 
-    // not sure when this one is actually called - check llgesturemgr instead
-    // mb: if not a gesture, and starts with '/', check for built-ins and discard anyway
+    // ** WARNING: I don't think this one is actually called - check llgesturemgr instead **
+    // mb: if not a gesture, and starts with '/' but is not "/me", check for built-ins and discard anyway
     if (!found_gestures) {
         if (string[0] == '/') {
-            // in SLPW, this is ALWAYS a gesture, so we aren't going to return it
-            // but as a hack, /. will toggle the voice listen point
-            if (string[1] == '.') {
-                LLSD dummy;
+            if (string.compare("/me") != 0) {
+                // in SLPW, this is ALWAYS a gesture (except "/me"), so we aren't going to return it
+                // but as a hack, /. will toggle the voice listen point
+                if (string[1] == '.') {
+                    LLSD dummy;
 
-                S32 earLoc = gSavedSettings.getS32("VoiceEarLocation");
-                if (earLoc) {
-                    earLoc = 0;
-                } else {
-                    earLoc = 1;
+                    S32 earLoc = gSavedSettings.getS32("VoiceEarLocation");
+                    if (earLoc) {
+                        earLoc = 0;
+                    } else {
+                        earLoc = 1;
+                    }
+                    gSavedSettings.setS32("VoiceEarLocation", earLoc);
+                    handleVoiceClientPrefsChanged(dummy);   // input arg is not used
                 }
-                gSavedSettings.setS32("VoiceEarLocation", earLoc);
-                handleVoiceClientPrefsChanged(dummy);   // input arg is not used
+                revised_string->clear();
+                found_gestures = true;
             }
-            revised_string->clear();
-            found_gestures = true;
         }
     }
 
